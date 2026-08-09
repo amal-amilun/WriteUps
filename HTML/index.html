@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <h2>Welcome to my website!</h2>
+        <main>
+            <h3>Cat Photos</h3>
+            <!-- TODO: Add link to cat photos-->
+            <p>Click here to view more <a 
+            href="#" target="_blank">Cat Photos</a>.</p>
+            
+            <a href="#" target="_blank"><img src="https://headsupfortails.com/cdn/shop/articles/Welcoming_a_Cat_to_a_New_Home_x630.jpg"
+            alt="A cute cat" width="300"></a>
+            <h3>Cat Lists</h3>
+
+            <div class="cat-lists">
+                <p>Things Cats <em>Love</em>:</p>
+                <ul>
+                    <li>Cat nip</li>
+                    <li>Soft blankets</li>
+                    <li>Interactive toys</li>
+                </ul>
+                <img src="Lasagna.jpg" alt="Lasagna" width="300">
+                <p>Things Cats <strong>Hate</strong>:</p>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+
+            <img src="cats.jpg" alt="Cats" width="300">
+            <form action="/submit-cat-photo">
+                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> indoor</label><br>
+                <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> outdoor</label><br>
+                
+                <label for="loving"><input id="loving" type="checkbox" name="personality" checked>Loving</label><br>
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality" checked>Lazy</label><br>
+                <label for="energetic"><input id="energetic" type="checkbox" name="personality" checked>Energetic</label><br>
+
+                <input type="text" placeholder="cat photo URL" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer><p><small>No Copyright <a href="#" target="_blank">Hehehe..</a></small></p></footer>
+    </body>
+</html>
