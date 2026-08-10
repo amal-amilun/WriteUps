@@ -1,0 +1,11 @@
+body {
+    font-size: 16px;
+    font-family: Arial, Halvetica, sans-serif;
+    line-height: 1.5;
+    background: #ffefd5;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    color: #380a16f1
+}
