@@ -11,7 +11,6 @@
 body {
   font: 1.5rem "Nunito", sans-serif;
   min-height: 100vh;
-
   background-color: #475569;
   background-image: radial-gradient(whitesmoke, #475569);
   display: flex;
@@ -36,8 +35,8 @@ header {
 }
 
 nav {
-  background-color: #fff;
-  color: #000;
+  background-color: white;
+  color: black;
   padding: 0.5rem;
   border-bottom: 2px solid #000;
 }
@@ -46,57 +45,55 @@ main {
   flex-grow: 1;
 }
 
-footer { 
+footer {
   bottom: 0;
 }
 
-/* || SMALL */
+/* SMALL  */
 @media screen and (min-width: 576px) {
   body {
     background-color: green;
-    background-image: radial-gradient(whitesmoke, green)
+    background-image: radial-gradient(whitesmoke, green);
   }
   nav {
     display: none;
   }
 }
 
-/* || MEDIUM */
+/* MEDIUM  */
 @media screen and (min-width: 768px) {
   body {
     background-color: gold;
-    background-image: radial-gradient(whitesmoke, gold)
+    background-image: radial-gradient(whitesmoke, gold);
   }
 }
 
-/* || LARGE */
+/* LARGE  */
 @media screen and (min-width: 992px) {
   body {
     background-color: firebrick;
-    background-image: radial-gradient(whitesmoke, firebrick)
+    background-image: radial-gradient(whitesmoke, firebrick);
   }
 }
 
-/* || XL  */
+/* XL  */
 @media screen and (min-width: 1200px) {
   body {
     background-color: rebeccapurple;
-    background-image: radial-gradient(whitesmoke, rebeccapurple)
+    background-image: radial-gradient(whitesmoke, rebeccapurple);
   }
 }
 
-/* || MOBILE DEVICE LANDSCAPE  */
+/* MOBILE DEVICE LANDSCAPE  */
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
   body {
     background-color: dodgerblue;
-    background-image: radial-gradient(whitesmoke, dodgerblue)
+    background-image: radial-gradient(whitesmoke, dodgerblue);
   }
-
   h1, h2 {
     font-size: 1.5rem;
   }
-
-  nav { display: none }
+  nav {
+    display: none;
+  }
 }
-
-

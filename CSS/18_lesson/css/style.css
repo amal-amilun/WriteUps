@@ -13,15 +13,16 @@ img {
   height: auto;
 }
 
-/* || UTILITY CLASSES */
+
+/* || UTILITY STYLES */
 .nowrap {
   white-space: nowrap;
 }
 
+
+
 /* || GENERAL STYLES */
-html {
-  scroll-behavior: smooth;
-}
+html {scroll-behavior: smooth;}
 
 body {
   font: 1.5rem "Nunito", sans-serif;
@@ -32,10 +33,9 @@ body {
   flex-direction: column;
 }
 
-header,
-footer {
+header, footer {
   position: sticky;
-  background-color: #1e293b;
+  background-color: #1E293B;
   color: whitesmoke;
   text-align: center;
 }
@@ -45,7 +45,7 @@ header {
 }
 
 nav {
-  background-color: #fff;
+  background-color: white;
   padding: 0.5rem;
   border-bottom: 2px solid #000;
   font-weight: bolder;
@@ -53,13 +53,11 @@ nav {
   justify-content: space-evenly;
 }
 
-nav a,
-nav a:visited {
-  color: #000;
+nav a, nav a:visited {
+  color: black;
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover, nav a:focus {
   color: hsla(0, 0%, 20%, 0.6);
 }
 
@@ -76,7 +74,7 @@ footer {
   bottom: 0;
 }
 
-/* || PROFILE CARD */
+/* PROFILE CARD */
 .card {
   scroll-margin-top: 8rem;
   width: min(100%, 350px);
@@ -106,7 +104,9 @@ footer {
   text-align: center;
 }
 
-/* || SMALL */
+
+
+/* SMALL  */
 @media screen and (min-width: 576px) {
   main {
     justify-content: center;
@@ -117,51 +117,45 @@ footer {
   .card {
     width: min(100%, 400px);
   }
-
   .card:last-child {
-    order: -1;
+    order:-1;
   }
 }
 
-/* || MEDIUM */
+/* MEDIUM  */
 @media screen and (min-width: 768px) {
   nav {
     display: none;
   }
-
   .card {
     width: min(100%, 325px);
   }
-
   .card figure {
     flex-flow: column-reverse;
   }
-
   .card p {
     margin-top: 1rem;
   }
 }
 
-/* || LARGE */
+/* LARGE  */
 @media screen and (min-width: 992px) {
   .card {
     width: min(100%, 400px);
   }
-
-  .card:nth-child(2) {
+  .card:nth-child(2){
     order: -1;
   }
 }
 
-/* || XL  */
+/* XL  */
 @media screen and (min-width: 1200px) {
   .card {
-    /* Remove calc() - min() supports math! */
-    width: min(33% - 1rem, 500px);
+    width: min(calc(33% - 1rem), 500px )
   }
 }
 
-/* || MOBILE DEVICE LANDSCAPE  */
+/* MOBILE DEVICE LANDSCAPE  */
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
   h1 {
     font-size: 1.5rem;
@@ -178,12 +172,10 @@ footer {
   }
 
   .card {
-    /* Remove calc() - min() supports math! */
-    width: min(33% - 0.25rem, 200px);
+    width: min(calc(33% - 0.25rem),200px);
   }
 
-  .card figcaption,
-  .card p {
+  .card figcaption, .card p {
     font-size: 1.25rem;
   }
 }
