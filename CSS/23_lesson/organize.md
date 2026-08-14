@@ -2,8 +2,8 @@
 
 -- Follow Your Team
 
--- Use comments to create headers 
+-- Use Comments to Create Headers
 
 -- Sort properties alphabetically ABCSS
 
--- Larger projects follow a naming convention methodology. For example: BEM - Block, Element, Modifier
+-- Larger projects follow a naming convention methodology. (BEM - Block, Element, Modifier)
